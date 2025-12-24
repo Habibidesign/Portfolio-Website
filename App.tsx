@@ -729,7 +729,7 @@ const App: React.FC = () => {
           <div className="flex items-center gap-0.5 md:gap-1">
             <NavIcon icon={<Home size={18} className={activeSection === 'home' ? 'text-white' : ''} />} label="Home" sectionId="home" />
             <NavIcon icon={<User size={18} className={activeSection === 'about' ? 'text-white' : ''} />} label="About" sectionId="about" />
-            <NavIcon icon={<Layout size={18} className={activeSection === 'works' ? 'text-white' : ''} />} label="Works" sectionId="works" />
+            {/* <NavIcon icon={<Layout size={18} className={activeSection === 'works' ? 'text-white' : ''} />} label="Works" sectionId="works" /> */}
             <NavIcon icon={<Briefcase size={18} className={activeSection === 'experience' ? 'text-white' : ''} />} label="Exp" sectionId="experience" />
             <div className="h-5 md:h-6 w-px bg-white/10 mx-0.5 md:mx-1"></div>
             <NavIcon icon={<Linkedin size={18} />} label="LinkedIn" href="https://www.linkedin.com/in/rizki-fadhilah-muhammad-habibi-b09a041b2/" />
