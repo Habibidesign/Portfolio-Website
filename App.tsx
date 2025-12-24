@@ -544,7 +544,7 @@ const App: React.FC = () => {
         <div className="absolute top-0 right-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-[#5271FF]/5 blur-[80px] md:blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2 -z-10"></div>
       </section>
 
-      <section id="works" className="w-full max-w-4xl border-x border-t border-white/10 overflow-hidden">
+      <section id="works" className="hidden w-full max-w-4xl border-x border-t border-white/10 overflow-hidden">
         <div className="px-6 md:px-10 py-16 md:py-24">
           <div className="flex justify-between items-end mb-12">
             <div>
