@@ -486,10 +486,10 @@ const App: React.FC = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center px-4">
-            <button className="bg-[#CCEDFF] text-black px-8 py-3.5 rounded-full font-work font-black hover:scale-105 transition-transform text-sm shadow-[0_0_20px_rgba(204,237,255,0.2)]" onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}>
+            <button className="bg-[#CCEDFF] text-black px-8 py-3.5 rounded-full font-work font-black hover:scale-105 transition-transform text-sm shadow-[0_0_20px_rgba(204,237,255,0.2)]" onClick={() => window.location.href = 'mailto:rizkifadhilahmhabibi@gmail.com'}>
               Start a project
             </button>
-            <button className="bg-white/5 border border-white/10 px-8 py-3.5 rounded-full font-work font-bold hover:bg-white/10 transition-all text-sm" onClick={() => document.getElementById('works')?.scrollIntoView({ behavior: 'smooth' })}>
+            <button className="hidden bg-white/5 border border-white/10 px-8 py-3.5 rounded-full font-work font-bold hover:bg-white/10 transition-all text-sm" onClick={() => document.getElementById('works')?.scrollIntoView({ behavior: 'smooth' })}>
               View Work
             </button>
           </div>
@@ -629,7 +629,10 @@ const App: React.FC = () => {
                   <span className="font-work font-black text-4xl md:text-5xl tracking-tighter">{plan.price}</span>
                   <span className="text-white/30 text-base md:text-lg font-work">{plan.period}</span>
                 </div>
-                <button className={`w-full py-3.5 md:py-4 rounded-full font-work font-black mb-8 md:mb-10 transition-all text-sm ${plan.highlighted ? 'bg-[#CCEDFF] text-black hover:bg-[#CCEDFF]/80' : 'bg-white text-black hover:bg-white/80'}`}>
+                <button
+                  onClick={() => window.location.href = 'mailto:rizkifadhilahmhabibi@gmail.com'}
+                  className={`w-full py-3.5 md:py-4 rounded-full font-work font-black mb-8 md:mb-10 transition-all text-sm ${plan.highlighted ? 'bg-[#CCEDFF] text-black hover:bg-[#CCEDFF]/80' : 'bg-white text-black hover:bg-white/80'}`}
+                >
                   {plan.cta}
                 </button>
                 <div className="space-y-3 md:space-y-4">
@@ -691,7 +694,7 @@ const App: React.FC = () => {
 
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <button
-                onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => window.location.href = 'mailto:rizkifadhilahmhabibi@gmail.com'}
                 className="bg-white text-black px-10 py-4 rounded-full font-work font-black text-sm hover:scale-105 transition-transform"
               >
                 Start a project
@@ -737,7 +740,7 @@ const App: React.FC = () => {
             <NavIcon icon={<Dribbble size={18} />} label="Dribbble" href="https://dribbble.com/Habibi11" />
           </div>
           <div className="h-5 md:h-6 w-px bg-white/10 mx-0.5 md:mx-1"></div>
-          <button onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })} className="flex items-center px-4 md:px-8 py-2 md:py-3 bg-[#CCEDFF] text-black rounded-xl cursor-pointer shadow-[0_8px_20px_rgba(204,237,255,0.2)] hover:scale-[1.03] active:scale-95 transition-all group shrink-0">
+          <button onClick={() => window.location.href = 'mailto:rizkifadhilahmhabibi@gmail.com'} className="flex items-center px-4 md:px-8 py-2 md:py-3 bg-[#CCEDFF] text-black rounded-xl cursor-pointer shadow-[0_8px_20px_rgba(204,237,255,0.2)] hover:scale-[1.03] active:scale-95 transition-all group shrink-0">
             <span className="font-work font-black text-xs md:text-sm tracking-tight">Hire Me</span>
           </button>
         </div>
