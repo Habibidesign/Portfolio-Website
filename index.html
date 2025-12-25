@@ -1,88 +1,108 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rizki Fadhilah Muhammad Habibi – UX Director</title>
-    <meta name="description" content="UX Director & Product Design Specialist. Expert in Design Systems, Product Thinking, and scalable UI." />
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Custom Fonts from Framer Export -->
-    <style>
-      /* Mona Sans */
-      @font-face {
-        font-family: 'Mona Sans';
-        src: url('https://assets.codepen.io/64/Mona-Sans.woff2') format('woff2 supports variations'),
-             url('https://assets.codepen.io/64/Mona-Sans.woff2') format('woff2-variations');
-        font-weight: 200 900;
-        font-stretch: 75% 125%;
-      }
-      /* Geist Mono */
-      @font-face {
-        font-family: 'Geist Mono';
-        src: url('https://fonts.gstatic.com/s/geistmono/v3/or3nQ6H-1_WfwkMZI_qYFrMdmgPn.woff2') format('woff2');
-        font-weight: 100 900;
-        font-display: swap;
-      }
-      
-      body {
-        background-color: #080808;
-        color: #ffffff;
-        font-family: 'Mona Sans', sans-serif;
-        -webkit-font-smoothing: antialiased;
-      }
-      
-      .text-gradient-morva {
-        background-image: radial-gradient(100% 507% at 3.5% 35.9%, rgb(255, 255, 255) 0%, rgb(255, 204, 255) 24%, rgb(194, 230, 255) 41%, rgb(227, 246, 255) 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
 
-      .btn-gradient-primary {
-        background: radial-gradient(99.93% 273.18% at -8.6% -16.5%, rgb(210, 230, 254) 17.35%, rgb(220, 235, 255) 38.33%, rgb(245, 249, 255) 75%, rgb(206, 228, 255) 100%);
-        color: #111;
-      }
-      
-      .btn-gradient-dark {
-        background: linear-gradient(180deg, rgb(30, 30, 32) 0%, rgb(22, 22, 24) 100%);
-        color: #fff;
-        box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px 2px rgba(255, 255, 255, 0.04), inset 0px 1px 2px 0px rgba(255, 255, 255, 0.5);
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rizki Fadhilah Muhammad Habibi – UX Director</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-      .glass-card {
-        background-color: rgb(9, 22, 20);
-        border: 1px solid rgba(25, 179, 155, 0.2);
-      }
-    </style>
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://habibi-portfolio.vercel.app/" />
+  <meta property="og:title" content="Rizki Fadhilah Muhammad Habibi – UX Director" />
+  <meta property="og:description"
+    content="UX Director & Product Design Specialist. Expert in Design Systems, Product Thinking, and scalable UI." />
+  <meta property="og:image" content="/og-image.png" />
 
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              morva: {
-                bg: '#080808',
-                card: '#111111',
-                border: '#1C1C1C',
-                white: '#FFFFFF',
-                muted: '#A1A1AA',
-                accent: '#CCEDFF',
-              }
-            },
-            fontFamily: {
-              sans: ['Mona Sans', 'sans-serif'],
-              mono: ['Geist Mono', 'monospace'],
-            },
-            backgroundImage: {
-              'radial-highlight': 'radial-gradient(169% 100% at 50% 0%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 50%)',
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://habibi-portfolio.vercel.app/" />
+  <meta property="twitter:title" content="Rizki Fadhilah Muhammad Habibi – UX Director" />
+  <meta property="twitter:description"
+    content="UX Director & Product Design Specialist. Expert in Design Systems, Product Thinking, and scalable UI." />
+  <meta property="twitter:image" content="/og-image.png" />
+  <meta name="description"
+    content="UX Director & Product Design Specialist. Expert in Design Systems, Product Thinking, and scalable UI." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Fonts from Framer Export -->
+  <style>
+    /* Mona Sans */
+    @font-face {
+      font-family: 'Mona Sans';
+      src: url('https://assets.codepen.io/64/Mona-Sans.woff2') format('woff2 supports variations'),
+        url('https://assets.codepen.io/64/Mona-Sans.woff2') format('woff2-variations');
+      font-weight: 200 900;
+      font-stretch: 75% 125%;
+    }
+
+    /* Geist Mono */
+    @font-face {
+      font-family: 'Geist Mono';
+      src: url('https://fonts.gstatic.com/s/geistmono/v3/or3nQ6H-1_WfwkMZI_qYFrMdmgPn.woff2') format('woff2');
+      font-weight: 100 900;
+      font-display: swap;
+    }
+
+    body {
+      background-color: #080808;
+      color: #ffffff;
+      font-family: 'Mona Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .text-gradient-morva {
+      background-image: radial-gradient(100% 507% at 3.5% 35.9%, rgb(255, 255, 255) 0%, rgb(255, 204, 255) 24%, rgb(194, 230, 255) 41%, rgb(227, 246, 255) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-gradient-primary {
+      background: radial-gradient(99.93% 273.18% at -8.6% -16.5%, rgb(210, 230, 254) 17.35%, rgb(220, 235, 255) 38.33%, rgb(245, 249, 255) 75%, rgb(206, 228, 255) 100%);
+      color: #111;
+    }
+
+    .btn-gradient-dark {
+      background: linear-gradient(180deg, rgb(30, 30, 32) 0%, rgb(22, 22, 24) 100%);
+      color: #fff;
+      box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px 2px rgba(255, 255, 255, 0.04), inset 0px 1px 2px 0px rgba(255, 255, 255, 0.5);
+    }
+
+    .glass-card {
+      background-color: rgb(9, 22, 20);
+      border: 1px solid rgba(25, 179, 155, 0.2);
+    }
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            morva: {
+              bg: '#080808',
+              card: '#111111',
+              border: '#1C1C1C',
+              white: '#FFFFFF',
+              muted: '#A1A1AA',
+              accent: '#CCEDFF',
             }
+          },
+          fontFamily: {
+            sans: ['Mona Sans', 'sans-serif'],
+            mono: ['Geist Mono', 'monospace'],
+          },
+          backgroundImage: {
+            'radial-highlight': 'radial-gradient(169% 100% at 50% 0%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 50%)',
           }
         }
       }
-    </script>
-    <script type="importmap">
+    }
+  </script>
+  <script type="importmap">
     {
       "imports": {
         "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
@@ -95,8 +115,10 @@
     </script>
   <link rel="stylesheet" href="/index.css">
 </head>
-  <body>
-    <div id="root"></div>
+
+<body>
+  <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
+
 </html>
