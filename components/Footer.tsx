@@ -23,21 +23,17 @@ const ADPListIcon = () => (
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-morva-bg pt-12 pb-8 px-6 border-t border-[#1c1c1c]">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-        <div className="text-gray-500 text-sm font-mono">
+    <footer className="bg-morva-bg pt-12 pb-32 px-6 border-t border-[#1c1c1c]">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-center items-center gap-8 relative">
+        <div className="text-gray-500 text-sm font-mono text-center">
           © {new Date().getFullYear()} Rizki Fadhilah Muhammad Habibi. All rights reserved.
         </div>
 
-        <div className="flex items-center gap-6">
-          <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Portfolio</a>
-          <a href="https://www.linkedin.com/in/rizki-fadhilah-muhammad-habibi-b09a041b2/" className="text-gray-400 hover:text-white transition-colors text-sm">LinkedIn</a>
-          <a href="https://dribbble.com/Habibi11" className="text-gray-400 hover:text-white transition-colors text-sm">Dribbble</a>
-        </div>
+
 
         <a
           href="#hero"
-          className="flex items-center gap-2 text-morva-accent text-sm font-mono hover:opacity-80 transition-opacity"
+          className="flex items-center gap-2 text-morva-accent text-sm font-mono hover:opacity-80 transition-opacity md:absolute md:right-0"
         >
           Back to Top ↑
         </a>
