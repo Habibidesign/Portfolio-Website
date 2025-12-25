@@ -106,7 +106,7 @@ const Pricing: React.FC = () => {
           <div className="p-8 bg-[#111111] flex flex-col md:flex-row items-center justify-between gap-4 border-t border-[#1c1c1c]">
             <span className="text-gray-400 font-sans text-lg">Looking for project based plan?</span>
             <a href="mailto:rizkifadhilahmhabibi@gmail.com" className="btn-gradient-dark px-8 py-3 rounded-full border border-[#262627] text-white font-bold text-sm hover:bg-white/5 transition-colors">
-              Hire Us
+              Hire Me
             </a>
           </div>
         </div>

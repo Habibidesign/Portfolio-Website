@@ -23,9 +23,9 @@ const Header: React.FC = () => {
         {/* Logo Section */}
         <a href="#" className="flex items-center gap-2 px-3 py-1.5 rounded-full hover:bg-white/5 transition-colors flex-shrink-0">
           <div className="w-6 h-6 rounded-full bg-gradient-to-br from-white to-gray-400 flex items-center justify-center text-black font-bold text-[10px]">
-            R
+            H
           </div>
-          <span className="font-sans font-bold text-sm text-white hidden sm:block">Rizki Habibi</span>
+          <span className="font-sans font-bold text-sm text-white hidden sm:block">Habibi</span>
         </a>
 
         <div className="w-[1px] h-6 bg-[#262627] flex-shrink-0"></div>

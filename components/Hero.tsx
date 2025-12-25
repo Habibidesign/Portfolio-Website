@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
-        I'm <span className="text-white">Rizki Habibi</span>, a UX Director & Product Design Specialist. I help founders and companies streamline product development from day one with scalable Design Systems.
+        I'm <span className="text-white">Habibi</span>, a UX Director & Product Design Specialist. I help founders and companies streamline product development from day one with scalable Design Systems.
       </motion.p>
 
       {/* CTA Buttons */}
