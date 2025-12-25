@@ -1,15 +1,15 @@
 import React from 'react';
 import { Check } from 'lucide-react';
 
-const PricingOption = ({ 
-  label, 
-  price, 
-  originalPrice, 
-  period, 
-  features, 
-  buttonText, 
+const PricingOption = ({
+  label,
+  price,
+  originalPrice,
+  period,
+  features,
+  buttonText,
   isPrimary,
-  color 
+  color
 }: any) => {
   const dotColorClass = color === 'orange' ? 'bg-orange-500' : 'bg-emerald-500';
   const textColorClass = color === 'orange' ? 'text-orange-400' : 'text-emerald-400';
@@ -21,7 +21,7 @@ const PricingOption = ({
           <div className={`w-2 h-2 rounded-full ${dotColorClass}`}></div>
           <span className={`font-mono text-sm ${textColorClass}`}>{label}</span>
         </div>
-        
+
         <div className="flex items-baseline gap-2 mb-1">
           <span className="font-sans font-bold text-5xl md:text-6xl text-white tracking-tight">{price}</span>
           <span className="font-mono text-gray-500 text-lg">/ {period}</span>
@@ -29,12 +29,14 @@ const PricingOption = ({
         {originalPrice && (
           <div className="font-sans text-xl text-gray-600 line-through mb-8 decoration-gray-700 decoration-2">{originalPrice}</div>
         )}
-        
-        <button className={`
+
+        <button
+          onClick={() => window.location.href = 'mailto:rizkifadhilahmhabibi@gmail.com'}
+          className={`
           px-8 py-4 rounded-full font-bold text-sm transition-all
-          ${isPrimary 
-            ? 'bg-[#CCEDFF] text-black hover:scale-105 hover:shadow-[0_0_20px_rgba(204,237,255,0.3)]' 
-            : 'bg-[#1c1c1c] text-white border border-[#333] hover:bg-[#262627] hover:border-gray-500'}
+          ${isPrimary
+              ? 'bg-[#CCEDFF] text-black hover:scale-105 hover:shadow-[0_0_20px_rgba(204,237,255,0.3)]'
+              : 'bg-[#1c1c1c] text-white border border-[#333] hover:bg-[#262627] hover:border-gray-500'}
         `}>
           {buttonText}
         </button>
@@ -44,8 +46,8 @@ const PricingOption = ({
         <ul className="space-y-4">
           {features.map((feature: string, idx: number) => (
             <li key={idx} className="flex items-start gap-3">
-               <Check className="text-emerald-400 mt-1 flex-shrink-0" size={18} strokeWidth={2.5} />
-               <span className="text-gray-300 font-sans font-medium">{feature}</span>
+              <Check className="text-emerald-400 mt-1 flex-shrink-0" size={18} strokeWidth={2.5} />
+              <span className="text-gray-300 font-sans font-medium">{feature}</span>
             </li>
           ))}
         </ul>
@@ -67,7 +69,7 @@ const Pricing: React.FC = () => {
         </div>
 
         <div className="border border-[#1c1c1c] rounded-[32px] overflow-hidden bg-[#0A0A0A] shadow-2xl">
-          <PricingOption 
+          <PricingOption
             label="Project Based"
             price="$1,000"
             originalPrice="$1,599"
@@ -83,8 +85,8 @@ const Pricing: React.FC = () => {
               "Pause / cancel anytime"
             ]}
           />
-          
-          <PricingOption 
+
+          <PricingOption
             label="Monthly"
             price="$3,499"
             originalPrice="$4,000"
@@ -100,12 +102,12 @@ const Pricing: React.FC = () => {
               "Pause / cancel anytime"
             ]}
           />
-          
+
           <div className="p-8 bg-[#111111] flex flex-col md:flex-row items-center justify-between gap-4 border-t border-[#1c1c1c]">
-             <span className="text-gray-400 font-sans text-lg">Looking for project based plan?</span>
-             <a href="mailto:rizkifadhilahmhabibi@gmail.com" className="px-8 py-3 rounded-full border border-[#262627] text-white hover:bg-[#1c1c1c] hover:border-gray-500 hover:text-white transition-all font-bold text-sm">
-                Hire Us
-             </a>
+            <span className="text-gray-400 font-sans text-lg">Looking for project based plan?</span>
+            <a href="mailto:rizkifadhilahmhabibi@gmail.com" className="btn-gradient-dark px-8 py-3 rounded-full border border-[#262627] text-white font-bold text-sm hover:bg-white/5 transition-colors">
+              Hire Us
+            </a>
           </div>
         </div>
       </div>
