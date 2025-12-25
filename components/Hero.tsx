@@ -4,7 +4,7 @@ import { ChevronRight } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section id="hero" className="relative pt-48 pb-24 flex flex-col justify-center items-center bg-morva-bg overflow-hidden text-center px-4 min-h-[90vh]">
+    <section id="hero" className="relative pt-32 pb-24 flex flex-col justify-center items-center bg-morva-bg overflow-hidden text-center px-4 min-h-[90vh]">
 
       {/* Status Pill */}
       <motion.div
