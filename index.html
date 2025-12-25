@@ -1,126 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rizki Habibi | UX Director</title>
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
-    rel="stylesheet">
-  <style>
-    @font-face {
-      font-family: 'Mona Sans Bold';
-      src: url('https://framerusercontent.com/assets/ptVe9me6RdJ9n3BOZfPOTnKrQ.woff') format('woff');
-      font-weight: 700;
-      font-display: swap;
-    }
-
-    body {
-      background-color: #000000;
-      color: white;
-      font-family: 'Inter', sans-serif;
-      overflow-x: hidden;
-    }
-
-    .font-mona-bold {
-      font-family: 'Mona Sans Bold', sans-serif;
-    }
-
-    .font-geist {
-      font-family: 'JetBrains Mono', monospace;
-    }
-
-    .text-gradient {
-      background: linear-gradient(90deg, #CCEDFF 0%, #5271FF 100%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .pill-nav {
-      background: rgba(13, 13, 13, 0.8);
-      backdrop-filter: blur(20px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    ::selection {
-      background: #5271FF;
-      color: white;
-    }
-
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
-
-    /* Hide scrollbar for IE, Edge and Firefox */
-    .no-scrollbar {
-      -ms-overflow-style: none;
-      /* IE and Edge */
-      scrollbar-width: none;
-      /* Firefox */
-    }
-
-    /* Noise Grain Texture Overlay */
-    .noise-grain::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: 5;
-      opacity: 0.15;
-      pointer-events: none;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-    }
-
-    @keyframes shape-breathe {
-
-      0%,
-      100% {
-        opacity: 0.6;
-        transform: scale(1) translateY(0);
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rizki Fadhilah Muhammad Habibi – UX Director</title>
+    <meta name="description" content="UX Director & Product Design Specialist. Expert in Design Systems, Product Thinking, and scalable UI." />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Fonts from Framer Export -->
+    <style>
+      /* Mona Sans */
+      @font-face {
+        font-family: 'Mona Sans';
+        src: url('https://assets.codepen.io/64/Mona-Sans.woff2') format('woff2 supports variations'),
+             url('https://assets.codepen.io/64/Mona-Sans.woff2') format('woff2-variations');
+        font-weight: 200 900;
+        font-stretch: 75% 125%;
+      }
+      /* Geist Mono */
+      @font-face {
+        font-family: 'Geist Mono';
+        src: url('https://fonts.gstatic.com/s/geistmono/v3/or3nQ6H-1_WfwkMZI_qYFrMdmgPn.woff2') format('woff2');
+        font-weight: 100 900;
+        font-display: swap;
+      }
+      
+      body {
+        background-color: #080808;
+        color: #ffffff;
+        font-family: 'Mona Sans', sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      
+      .text-gradient-morva {
+        background-image: radial-gradient(100% 507% at 3.5% 35.9%, rgb(255, 255, 255) 0%, rgb(255, 204, 255) 24%, rgb(194, 230, 255) 41%, rgb(227, 246, 255) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
       }
 
-      50% {
-        opacity: 1;
-        transform: scale(1.05) translateY(-5px);
+      .btn-gradient-primary {
+        background: radial-gradient(99.93% 273.18% at -8.6% -16.5%, rgb(210, 230, 254) 17.35%, rgb(220, 235, 255) 38.33%, rgb(245, 249, 255) 75%, rgb(206, 228, 255) 100%);
+        color: #111;
+      }
+      
+      .btn-gradient-dark {
+        background: linear-gradient(180deg, rgb(30, 30, 32) 0%, rgb(22, 22, 24) 100%);
+        color: #fff;
+        box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px 2px rgba(255, 255, 255, 0.04), inset 0px 1px 2px 0px rgba(255, 255, 255, 0.5);
+      }
+
+      .glass-card {
+        background-color: rgb(9, 22, 20);
+        border: 1px solid rgba(25, 179, 155, 0.2);
+      }
+    </style>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              morva: {
+                bg: '#080808',
+                card: '#111111',
+                border: '#1C1C1C',
+                white: '#FFFFFF',
+                muted: '#A1A1AA',
+                accent: '#CCEDFF',
+              }
+            },
+            fontFamily: {
+              sans: ['Mona Sans', 'sans-serif'],
+              mono: ['Geist Mono', 'monospace'],
+            },
+            backgroundImage: {
+              'radial-highlight': 'radial-gradient(169% 100% at 50% 0%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 50%)',
+            }
+          }
+        }
+      }
+    </script>
+    <script type="importmap">
+    {
+      "imports": {
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "react": "https://esm.sh/react@^19.2.3",
+        "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+        "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
       }
     }
-
-    .animate-breathe {
-      animation: shape-breathe 4s ease-in-out infinite;
-    }
-
-    /* Stepped Geometric Layers */
-    .step-layer {
-      position: absolute;
-      width: 160px;
-      height: 160px;
-      background: linear-gradient(135deg, #5271FF 0%, #CCEDFF 100%);
-      transform: rotate(-45deg) skew(15deg, 15deg);
-      box-shadow: 0 0 40px rgba(82, 113, 255, 0.5);
-    }
-
-    .hero-glow-container {
-      filter: blur(15px);
-      mix-blend-mode: screen;
-    }
-  </style>
-
+    </script>
+  <link rel="stylesheet" href="/index.css">
 </head>
-
-<body>
-  <div id="root"></div>
+  <body>
+    <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
-
 </html>
