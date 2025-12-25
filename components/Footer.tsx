@@ -39,31 +39,7 @@ const Footer: React.FC = () => {
         </a>
       </div>
 
-      {/* Sticky Bottom Bar Mockup for Mobile & Desktop */}
-      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 bg-[#111111]/90 backdrop-blur-md border border-[#262627] rounded-full p-2 pl-4 pr-2 shadow-2xl flex items-center gap-2 md:gap-4 z-40 max-w-[95vw]">
 
-        {/* Social Icons */}
-        <div className="flex items-center gap-1">
-          <a href="https://www.linkedin.com/in/rizki-fadhilah-muhammad-habibi-b09a041b2/" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full text-gray-400 hover:text-white transition-colors">
-            <LinkedInIcon />
-          </a>
-          <a href="https://dribbble.com/Habibi11" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full text-gray-400 hover:text-white transition-colors">
-            <DribbbleIcon />
-          </a>
-          <a href="https://adplist.org/mentors/rizki-fadhilah-muhammad-habibi?session=26620-mentorship-session" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full text-gray-400 hover:text-white transition-colors">
-            <ADPListIcon />
-          </a>
-          <a href="https://medium.com/@rizkifadhilahmhabibi" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full text-gray-400 hover:text-white transition-colors">
-            <MediumIcon />
-          </a>
-        </div>
-
-        <div className="w-[1px] h-6 bg-[#262627]"></div>
-
-        <a href="mailto:rizkifadhilahmhabibi@gmail.com" className="btn-gradient-dark px-4 md:px-6 py-2.5 rounded-full border border-[#262627] text-white font-bold text-sm hover:bg-white/5 transition-colors shadow-lg whitespace-nowrap">
-          Hire Me
-        </a>
-      </div>
     </footer>
   );
 };

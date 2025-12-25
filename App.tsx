@@ -14,6 +14,8 @@ import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
 
+import StickyNavbar from './components/StickyNavbar';
+
 const NoiseOverlay = () => (
   <div className="noise-bg pointer-events-none fixed inset-0 z-[9999] opacity-[0.04]"></div>
 );
@@ -27,15 +29,15 @@ function App() {
     // Check if ScrollSmoother is registered/available before using
     // Note: ScrollSmoother is a Club GSAP premium plugin.
     // If text "100% FREE" implies bonus plugins are present, this will work.
-    try {
-      ScrollSmoother.create({
-        smooth: 1.5, // Ease-out effect (higher = smoother/slower)
-        effects: true,
-        smoothTouch: 0.1,
-      });
-    } catch (e) {
-      console.warn("ScrollSmoother failed to initialize. Ensure Club GSAP is installed.", e);
-    }
+    // try {
+    //   ScrollSmoother.create({
+    //     smooth: 1.5, // Ease-out effect (higher = smoother/slower)
+    //     effects: true,
+    //     smoothTouch: 0.1,
+    //   });
+    // } catch (e) {
+    //   console.warn("ScrollSmoother failed to initialize. Ensure Club GSAP is installed.", e);
+    // }
   }, []);
 
   return (
@@ -43,24 +45,21 @@ function App() {
       <CustomCursor />
       <NoiseOverlay />
       <Header />
+      <StickyNavbar />
 
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
-          <main>
-            <Hero />
-            <TrustBar />
-            <Approach />
-            <ProblemGrid />
-            <SolutionPillars />
-            <Education />
-            <Pricing />
-            <FAQ />
-            <Testimonial />
-            <FinalCTA />
-          </main>
-          <Footer />
-        </div>
-      </div>
+      <main>
+        <Hero />
+        <TrustBar />
+        <Approach />
+        <ProblemGrid />
+        <SolutionPillars />
+        <Education />
+        <Pricing />
+        <FAQ />
+        <Testimonial />
+        <FinalCTA />
+      </main>
+      <Footer />
     </div>
   );
 }
