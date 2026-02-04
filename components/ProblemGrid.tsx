@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 
 const SkillCard: React.FC<{ title: string; level: string; color: string }> = ({ title, level, color }) => (
   <div className="p-1 rounded-[24px] bg-[#1c1c1c] flex-shrink-0 w-[280px]">

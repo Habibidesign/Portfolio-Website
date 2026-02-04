@@ -3,6 +3,7 @@ import './utils/gsap-setup'; // Register GSAP plugins
 import Header from './components/Header';
 import Hero from './components/Hero';
 import TrustBar from './components/TrustBar';
+import MyWork from './components/MyWork';
 import Approach from './components/Approach';
 import ProblemGrid from './components/ProblemGrid';
 import SolutionPillars from './components/SolutionPillars';
@@ -22,7 +23,7 @@ const NoiseOverlay = () => (
 
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
-import { ScrollSmoother } from 'gsap/ScrollSmoother';
+
 
 function App() {
   useGSAP(() => {
@@ -50,6 +51,7 @@ function App() {
       <main>
         <Hero />
         <TrustBar />
+        <MyWork />
         <Approach />
         <ProblemGrid />
         <SolutionPillars />
